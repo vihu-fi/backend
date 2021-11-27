@@ -1,0 +1,29 @@
+{
+  "name": "vihu",
+  "version": "1.0.0",
+  "description": "Game for selecting the funniest images for texts",
+  "main": "src/index.ts",
+  "scripts": {
+    "start": "ts-node-dev --respawn backend/apis/telegram.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vihu-fi/vihu.git"
+  },
+  "author": "Pyry Rouvila",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vihu-fi/vihu/issues"
+  },
+  "homepage": "https://github.com/vihu-fi/vihu#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "envalid": "^7.2.2",
+    "node-telegram-bot-api": "^0.54.0",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.5.2"
+  },
+  "devDependencies": {
+    "@types/node-telegram-bot-api": "^0.53.2"
+  }
+}
