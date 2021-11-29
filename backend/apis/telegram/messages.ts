@@ -1,4 +1,5 @@
-import { getLobbyPlayers, Lobby } from "../lobby";
+import { getLobbyPlayers, Lobby } from "../../lobby";
+import { espaceMessage } from "./utils";
 
 export const playerList = (lobby: Lobby) =>
   espaceMessage(`*Pelaajat*
@@ -21,13 +22,5 @@ export const lobbyCreated = (
   /aloita - Aloittaa pelin`;
 
 export const helpJoin = "Anna huoneen tunnus /liity tunnus";
-
-const espaceMessage = (message: string) =>
-  message
-    .replace(/_/gi, "\\_")
-    .replace(/-/gi, "\\-")
-    .replace("~", "\\~")
-    .replace(/`/gi, "\\`")
-    .replace(/\./g, "\\.")
-    .replace(/\</g, "\\<")
-    .replace(/\>/g, "\\>");
+export const gameStarted =
+  "Aloita kuvien lähettäminen! Näihin myöhemmin valitaan osuvat tekstit.";

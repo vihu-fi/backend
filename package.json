@@ -2,7 +2,7 @@
   "name": "vihu",
   "version": "1.0.0",
   "description": "Game for selecting the funniest images for texts",
-  "main": "src/index.ts",
+  "main": "backend/apis/telegram.ts",
   "scripts": {
     "start": "ts-node-dev --respawn backend/apis/telegram.ts"
   },
